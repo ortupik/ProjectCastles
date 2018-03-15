@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">Timetable System</string>
+    <string name="host">10.0.0.2</string>
+    <string name="port">8080</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_timetable">CS 3.2 Timetable</string>
+    <string name="unit_class_lec_tv"><b>ICS 2306</b>\nD.Opondo\nR6</string>
+    <string name="day">TIME\nDAY</string>
+    <string name="title_activity_rooms">Class Rooms</string>
+    <string name="section_format">Hello : %1$d</string>
+    <string name="room_occ"><b>RC1</b>\nBBIT-3.2</string>
+    <string name="resource_center">Resource and Sch.of Business</string>
+    <string name="free_today"><b>RC4</b>\nFREE</string>
+
+
+    //times
+    <string name="_7_00_8_00"> 7:00AM\n8:00AM</string>
+    <string name="_8_00_9_00"> 8:00AM\n9:00AM</string>
+    <string name="_9_00_10_00"> 9:00AM\n10:00AM</string>
+    <string name="_10_00_11_00"> 10:00AM\n11:00AM</string>
+    <string name="_11_00_12_00"> 11:00AM\n12:00PM</string>
+    <string name="_12_00_1_00"> 12:00PM\n1:00PM</string>
+    <string name="_1_00_2_00"> 1:00PM\n2:00PM</string>
+    <string name="_2_00_3_00"> 2:00PM\n3:00PM</string>
+    <string name="_3_00_4_00"> 3:00PM\n4:00PM</string>
+    <string name="_4_00_5_00"> 4:00PM\n5:00PM</string>
+    <string name="_5_00_6_00"> 5:00PM\n6:00PM</string>
+    <string name="_6_00_7_00"> 6:00PM\n7:00PM</string>
+
+    //for exams
+    <string name="_8_30_11_00">08:30AM\n10:30AM</string>
+    <string name="_11_00_13_00"> 11:00AM\n1:00PM</string>
+    <string name="_14_00_16_00"> 2:00PM\n4:00PM</string>
+
+
+    <string name="title_activity_rooms_events">RCL1 List Events</string>
+    <string name="title_activity_intro_time_table">IntroTimeTable</string>
+    <string name="verify"><u>Verify</u></string>
+    <string name="qr_title">Visit studentlife.com and scan QR Code</string>
+    <string name="hello_world">hello</string>
+    <string name="login">Login</string>
+    <string name="start_up">Start Up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_student_registration">Student Registration</string>
+    <string name="register_as_student"><u>Register as Dekut Student</u></string>
+    <string name="title_activity_castle_utilities">Castle Utilities</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_message">New Message</string>
+    <string name="desc_empty_chat">Lets start conversation</string>
+    <string name="welcome">Welcome!</string>
+    <string name="sending_failed">Sending Failed</string>
+    <string name="unkown_type">Unknown Type</string>
+
+    <string name="chat_error_failed_write">Failed to write temporary picture!</string>
+    <string name="chat_error_no_handler">No handler for this type of file.</string>
+    <string name="chat_error_failed_open_picture">Failed to open picture!</string>
+    <string name="chat_error_failed_read_picture">Failed to read picture data!</string>
+    <string name="chat_error_failed_open_file">Failed to open file!</string>
+    <string name="chat_error_failed_read_file">Failed to read file data!</string>
+    <string name="chat_activity_label_clipboard">Message</string>
+    <string name="chat_activity_copied_message">Copied</string>
+    <string name="hint_message">Type a message…</string>
+
+    <string name="single_swipe">Single</string>
+    <string name="single_swipe_not_anim">Single Swipe Gesture</string>
+    <string name="custom_swipe">Custom</string>
+    <string name="recycler_swipe">RecyclerView</string>
+    <string name="dismiss_swipe">Dismissable</string>
+    <string name="other_swipe">Other Layout</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="about">About</string>
+    <string name="donate">Donate</string>
+    <string name="share">Share</string>
+    <string name="map_swipe">Maps</string>
+    <string name="dialog_message">This library is totally free and is available on <a href="https://github.com/michelelacorte/SwipeableCard">GitHub</a>.\nThe library is licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache</a> license.\n\nApplication Version 1.2\nLibrary Version 2.3.0\n\nCopyright 2016 Michele Lacorte.</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="donate_message">If you like this library, please help developer!\n\n<a href="https://testcastle.herokuapp.com">Donate</a></string>
+    <string name="view_contact">View Contact</string>
+    <string name="info_tt">PN:The information displayed may not be accurate.\nThis maybe due to lack of comprehensive data.\n<u><a href="https://testcastle.herokuapp.com/blog">Learn More</a></u></string>
+    <string name="info">The information provided forth is\n courtesy of our users.\nWe do not guarantee its accuracy.\n<u><a href="https://testcastle.herokuapp.com/blog">Learn More</a></u></string>
+
+
+    <string name="separator">/</string>
+
+
+    <string name="time">Time</string>
+    <string name="day_s">Day</string>
+    <string name="unit_code">Unit</string>
+    <string name="group">Group</string>
+    <string name="title_activity_my_units">My Units</string>
+    <string name="title_activity_about">About</string>
+    <string name="created_by"><u>Android / System Programmer:</u>\n<a>@Chris_Kipruto \n\n<u>Web/Application Developer </u>\n</a><a>@Joseph Kamania\n</a></string>
+    <string name="warning">This segment of this application is vastly unstable,incomplete and untested.\nUse it at your own discretion!\n\n<a>Learn More</a></string>
+
+    // User Agreement
+    <string name="sup_choose_user_picture">Choose user picture</string>
+    <string name="uag_user_agreement_title">User Agreement</string>
+    <string name="uag_user_agreement">By clicking Proceed, you agree to \n Student Life <b><u><a>User Agreement</a></u></b></string>
+    <string name="uag_policy_link">http://testcastle.herokuapp.com/blog/</string>
+    <string name="already_have_an_account"><u>Already have an account ?</u></string>
+    <string name="no_account_yet_create_one"><u>No account yet? Create one</u></string>
+    <string name="title_activity_user_agreement">Disclaimer</string>
+
+    <string name="user_agreement">This is not an official app.Use it at your own risk.\nUnder no circumstances,
+        will I  be held liable for any losses or damages \n
+        that may result from direct or indirect use or misuse of this application,whether it is misinformation or otherwise.\n
+        By using this app you solemnly agree to this terms and any other that may be laid out in
+        <u>testcastle.herokuapp.com</u>\n\n
+        Happy testing!
+    </string>
+    <string name="title_activity_view_hostels">Hostels</string>
+
+    <string name="title_activity_hostel_details">Hostels </string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_lec_preference">LecPreferenceActivity</string>
+
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Not a member? Get registered in Firebase now!</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="title_activity_lecturer_main">Lecturer Portal</string>
+</resources>

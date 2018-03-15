@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_castle_utilities"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.slife.chris.studentlife.lecturer.LecturerMainActivity"
+    tools:showIn="@layout/activity_lecturer_main"
+    android:background="@drawable/about_img">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_height="wrap_content"
+                app:cardElevation="9dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="20dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_gravity="center_vertical|center_horizontal|center">
+
+                                    <TextView
+                                        android:text="Lecture's Portal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView2"
+                                        android:textSize="21sp"
+                                        android:typeface="serif"
+                                        android:textStyle="normal|bold"
+                                        android:textColor="@color/tableHeader"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:textAlignment="center" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="21sp"
+                                        android:fontFamily="serif"
+                                        android:text="Mr. Harry Opiyo"
+                                        android:textStyle="normal|bold"
+                                        android:id="@+id/class_group"
+                                        android:textColorLink="?android:attr/colorPressedHighlight"
+                                        android:textColor="@android:color/holo_orange_dark"
+                                        android:background="@drawable/border"
+                                        android:gravity="center_vertical|center_horizontal"
+                                        android:textAlignment="center" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="10dp">
+
+                                    <TextView
+                                        android:text="Please Set All Preferences for your Units."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.63"
+                                        android:textSize="12sp"
+                                        android:fontFamily="serif"
+                                        android:textStyle="normal|bold"
+                                        android:id="@+id/build_date"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/colorAccent" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/btn_tt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="5dp" >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <ImageView android:src="@drawable/emoji_1f4c5"
+                                android:layout_margin="4dp"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingRight="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="5dp">
+                                <TextView
+                                    android:text="My Timetable"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:textStyle="normal|bold"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/qiscus_primary"
+                                    android:textAllCaps="true"
+                                    android:fontFamily="sans-serif" />
+
+                                <TextView
+                                    android:text="Displays your personal  timetable."
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/btn_pending_units"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="5dp" >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <ImageView android:src="@drawable/emoji_1f4da"
+                                android:layout_margin="4dp"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="5dp">
+
+                                <TextView
+                                    android:text="Pending Units"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:textStyle="normal|bold"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/qiscus_primary"
+                                    android:textAllCaps="true" />
+
+                                <TextView
+                                    android:text="Displays units you have not set time prefernces."
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/btn_set_units"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="5dp" >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <ImageView android:src="@drawable/emoji_1f3e6"
+                                android:layout_margin="4dp"
+                                android:layout_height="53dp"
+                                android:layout_width="53dp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="10dp">
+                                <TextView
+                                    android:text="Already Set Units"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp"
+                                    android:textStyle="normal|bold"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/qiscus_primary"
+                                    android:textAllCaps="true" />
+
+                                <TextView
+                                    android:text="Shows units you have set time prefernce."
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

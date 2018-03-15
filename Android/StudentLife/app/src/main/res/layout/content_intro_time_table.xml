@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_intro_time_table"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.slife.chris.studentlife.student.IntroTimeTable"
+    tools:showIn="@layout/activity_intro_time_table"
+    android:background="@drawable/about_img"
+    android:weightSum="1">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="4dp"
+                    android:clickable="true"
+                    android:src="@drawable/dekutresource"
+                    />
+
+                <TextView
+                    android:text="Timetables"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:layout_weight="0.10"
+                    android:textSize="21sp"
+                    android:typeface="serif"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/tableHeader"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.63"
+                    android:textSize="21sp"
+                    android:fontFamily="serif"
+                    android:textStyle="normal|bold"
+                    android:id="@+id/class_group"
+                    android:textColorLink="?android:attr/colorPressedHighlight"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:background="@drawable/border"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="8dp"
+                android:background="#88a8a8a8" android:layout_marginRight="8dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:text="Latest Build:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:layout_weight="0.10"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="5/12/2016 4:50 PM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.63"
+                    android:textSize="16sp"
+                    android:fontFamily="serif"
+                    android:textStyle="normal|bold"
+                    android:id="@+id/build_date"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="8dp"
+                android:background="#88a8a8a8" android:layout_marginRight="8dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:text="NOT Verified:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:layout_weight="0.10"
+                    android:textSize="18sp"
+                    android:typeface="serif"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="@string/verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.63"
+                    android:textSize="18sp"
+                    android:fontFamily="serif"
+                    android:textStyle="normal|bold"
+                    android:id="@+id/verifyTT"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/holo_orange_dark" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical|center_horizontal|center">
+        <Button
+            android:text="Class Timetable"
+            android:layout_width="157dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/cardView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btn_viewTT"
+            android:background="@color/qiscus_primary"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal|center" />
+        <Button
+            android:text="Exams Timetable"
+            android:layout_width="157dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/cardView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btn_viewET"
+            android:background="@color/material_light_teal"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+
+</LinearLayout>

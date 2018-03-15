@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/table_empty_def"
+    android:textAlignment="center"
+    android:gravity="center_vertical|center_horizontal|center"
+        android:typeface="monospace"
+          android:minHeight="60dp"
+    android:padding="10dp"
+    android:width="80dp"
+        android:textSize="12sp"
+    android:layout_gravity="center_vertical|center_horizontal|center" />

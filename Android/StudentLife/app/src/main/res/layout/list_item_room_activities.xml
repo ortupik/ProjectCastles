@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="8:00 - 11:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/day"
+        android:layout_toEndOf="@+id/day" />
+
+    <TextView
+        android:text="ICS 2306"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:id="@+id/unit_code"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/class_group"
+        android:layout_alignBottom="@+id/class_group"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="BBIT 3.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/class_group"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/day"
+        android:layout_alignRight="@+id/unit_code"
+        android:layout_alignEnd="@+id/unit_code"
+        android:layout_marginRight="105dp"
+        android:layout_marginEnd="105dp" />
+
+    <TextView
+        android:text="DAY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

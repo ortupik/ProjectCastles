@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="horizontal"
+	android:layout_width="match_parent"
+ 	android:layout_height="wrap_content"
+		>
+
+	<de.hdodenhof.circleimageview.CircleImageView
+			android:id="@+id/imgAvatar"
+			android:layout_width="56dp"
+			android:layout_height="56dp"
+			android:layout_marginBottom="8dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:layout_marginTop="4dp"
+			android:clickable="true"
+			android:src="@drawable/default_avatar"
+			/>
+
+	<LinearLayout
+				  android:orientation="vertical"
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content">
+
+		<RelativeLayout
+					  android:orientation="horizontal"
+					  android:layout_width="fill_parent"
+					  android:layout_height="wrap_content" android:layout_marginTop="10dp">
+
+ 	<TextView android:id="@+id/username_C"
+		android:textSize="18sp"
+		android:textStyle="bold" 
+		android:textColor="@color/colorPrimary"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:text="Username"/>
+			<TextView android:id="@+id/chatsTime"
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content" android:text="name" android:textColor="@color/material_teal"
+					  android:layout_alignParentTop="true"
+				      android:layout_alignParentEnd="true"
+			        	android:layout_alignParentRight="true"
+					  android:layout_marginRight="10dp"
+				android:textStyle="bold"
+				android:textSize="13dp" />
+
+		</RelativeLayout>
+
+		<TextView android:id="@+id/message"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content" android:text="Cool weather" android:textColor="@color/dark_gray"
+				  android:layout_marginTop="5dp" android:textSize="14dp"/>
+		<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="8dp"
+                android:background="#88a8a8a8" android:layout_marginRight="8dp"/>
+	</LinearLayout>
+	<TextView
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:text="New Text"
+			android:id="@+id/last_seen"  android:visibility="invisible"/>
+	<TextView
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:text="New Text"
+		android:id="@+id/chat_id"  android:visibility="invisible"/>
+	<TextView
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:text="New Text"
+		android:id="@+id/userId_C"  android:visibility="invisible"/>
+	<TextView
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:text="New Text"
+			android:id="@+id/phoneNo_C"  android:visibility="invisible"/>
+
+</LinearLayout>
+

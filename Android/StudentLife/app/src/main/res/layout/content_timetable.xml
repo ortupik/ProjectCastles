@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".student.TimetableActivity"
+    tools:showIn="@layout/activity_timetable"
+    android:padding="5dp">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal|vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dip">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/timetable"
+        >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:text="@string/day"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_header_shape"
+            android:textColor="@color/tableHeader"
+            android:text="@string/_7_00_8_00"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_header_shape"
+            android:textColor="@color/tableHeader"
+            android:text="@string/_8_00_9_00"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:text="@string/_9_00_10_00"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:text="@string/_10_00_11_00"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:text="@string/_11_00_12_00"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:text="@string/_12_00_1_00"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:text="@string/_1_00_2_00"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:textStyle="bold"
+            android:text="@string/_2_00_3_00" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:textStyle="bold"
+            android:text="@string/_3_00_4_00" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:textStyle="bold"
+            android:text="@string/_4_00_5_00" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:textStyle="bold"
+            android:text="@string/_5_00_6_00" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/tableHeader"
+            android:background="@drawable/table_header_shape"
+            android:textStyle="bold"
+            android:text="@string/_6_00_7_00" />
+    </TableRow>
+    </TableLayout>
+    </HorizontalScrollView>
+</android.support.v4.widget.NestedScrollView>

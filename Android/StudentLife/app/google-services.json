@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "796100830057",
+    "firebase_url": "https://personal-126b4.firebaseio.com",
+    "project_id": "personal-126b4",
+    "storage_bucket": "personal-126b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796100830057:android:aa41231bdd74bde1",
+        "android_client_info": {
+          "package_name": "com.personal.chris.personal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796100830057-n0qpqtp8rmvq8468eq8c7rj9t3mgckh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdG_vTXGNqbNiseBMN0qxof7aGuTYKROc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796100830057:android:54924a2f58c90224",
+        "android_client_info": {
+          "package_name": "com.slife.chris.studentlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796100830057-n0qpqtp8rmvq8468eq8c7rj9t3mgckh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdG_vTXGNqbNiseBMN0qxof7aGuTYKROc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

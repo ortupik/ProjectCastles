@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SimpleRatingBar"><attr format="boolean" name="SRB_hideRatingNumber"/><attr format="dimension" name="SRB_size"/><attr format="integer" name="SRB_maxRating"/><attr format="string" name="SRB_filledIcon"/><attr format="string" name="SRB_unfilledIcon"/><attr format="color" name="SRB_textColor"/><attr format="color" name="SRB_filledIconColor"/><attr format="color" name="SRB_unfilledIconColor"/></declare-styleable>
+    <string name="ratingIconCircleFilled">●</string>
+    <string name="ratingIconCircleOutline">○</string>
+    <string name="ratingIconDollar">$</string>
+    <string name="ratingIconEuro">€</string>
+    <string name="ratingIconHeartFilled">♥</string>
+    <string name="ratingIconHeartOutline">♡</string>
+    <string name="ratingIconMusic">♪</string>
+    <string name="ratingIconPound">£</string>
+    <string name="ratingIconStarFilled">★</string>
+    <string name="ratingIconStarOutline">☆</string>
+</resources>

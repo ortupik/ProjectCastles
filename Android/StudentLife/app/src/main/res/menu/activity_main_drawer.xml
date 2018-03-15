@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/social"
+            android:icon="@drawable/ic_forum"
+            android:title="Social" />
+        <item
+            android:id="@+id/student"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Student" />
+        <item
+            android:id="@+id/hostel"
+            android:icon="@drawable/ic_restaurants"
+            android:title="Hostels" />
+
+    </group>
+
+    <item android:title="Other">
+
+        <menu>
+            <item
+                android:id="@+id/qr_item"
+                android:icon="@drawable/ic_nearby"
+                android:title="Web Castle" />
+
+
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/menu_settings"
+                android:enabled="false"
+                android:title="Settings" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/menu_help"
+                android:title="About" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_menu"
+                android:enabled="false"
+                android:title="Log out" />
+
+        </menu>
+    </item>
+
+</menu>

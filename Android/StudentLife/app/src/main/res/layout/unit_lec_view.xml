@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp">
+
+            <TextView android:id="@+id/unit_code"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+                      android:textColor="@color/colorPrimary"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="ICS 2209" android:paddingLeft="20dp"/>
+            <TextView android:id="@+id/unit_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="Design &amp; Implementation Of Comp..." android:textColor="@android:color/background_dark"
+                      android:layout_alignParentTop="true" android:layout_alignParentEnd="true"
+                      android:layout_marginRight="20dp" android:textSize="14dp" android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp">
+
+            <TextView android:id="@+id/has_set"
+                      android:textSize="14sp"
+                      android:textStyle="bold"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="NOT SET" android:paddingLeft="20dp"
+                android:textColor="?android:attr/textColorSecondary" />
+            <TextView android:id="@+id/course_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Computer Science 3.1"
+                      android:textColor="@android:color/holo_red_dark"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginRight="20dp" android:textSize="14dp" android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </LinearLayout>
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

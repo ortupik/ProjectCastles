@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/day_view"
+        android:layout_height="match_parent"
+        android:width="80dp"
+        android:background="@drawable/table_header_shape"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:minHeight="60dp"
+        android:textColor="@color/tableHeader"
+        android:textStyle="bold"
+        android:textAlignment="center" />

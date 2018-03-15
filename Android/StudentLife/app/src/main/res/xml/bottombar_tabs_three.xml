@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+    id="@+id/tab_contacts"
+    icon="@drawable/ic_friends"
+    title="Members" />
+    <tab
+        id="@+id/tab_chats"
+        icon="@drawable/ic_recents"
+        title="Converations" />
+
+    <tab
+        id="@+id/tab_castles"
+        icon="@drawable/ic_nearby"
+        title="Friends" />
+</tabs>

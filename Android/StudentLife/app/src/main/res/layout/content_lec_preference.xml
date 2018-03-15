@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_lec_preference"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.slife.chris.studentlife.lecturer.LecPreferenceActivity"
+    tools:showIn="@layout/activity_lec_preference"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp">
+
+                    <TextView android:id="@+id/unit_code"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="ICS 2209" android:paddingLeft="20dp"/>
+                    <TextView android:id="@+id/unit_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="Design &amp; Implementation Of Comp..." android:textColor="@android:color/background_dark"
+                        android:layout_alignParentTop="true" android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp" android:textSize="14dp" android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp">
+
+                    <TextView android:id="@+id/hours"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hours" android:paddingLeft="20dp"
+                        android:textColor="?android:attr/textColorTertiary" />
+                    <TextView android:id="@+id/course_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Computer Science 3.1"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp" android:textSize="14dp" android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorAccent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/shimmer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#444"
+            android:textSize="18sp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="30dp"
+            android:textStyle="normal|bold"
+            fontPath="OpenSans-Light.ttf"
+            tools:text="Add Preferred Day and Time"
+            android:text="Add Preferred Day and Time"
+            android:layout_marginTop="30dp"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:text="Select Day"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:text="Select Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_button"
+                android:layout_weight="0.00" />
+
+            <TextView
+                android:text="Select Time:"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/timeTV"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_set_pref"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@drawable/button_sign_up_blue_selector"
+            android:textColor="@color/white"
+            android:text="Set Preference"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

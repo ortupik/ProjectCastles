@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.slife.chris.studentlife.student.RoomsEventsActivity"
+    android:orientation="vertical"
+    android:background="@drawable/about_img">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+
+            <ImageView
+                android:id="@+id/backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="1.0"
+                app:srcCompat="@drawable/dekutresource" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin" />
+
+            <TextView
+                android:text="RC11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView20"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical"
+                android:fontFamily="sans-serif" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llo">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp" android:id="@+id/rer">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/material_teal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="Building"
+                    android:paddingLeft="15dp" />
+                <TextView android:id="@+id/viewMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="View Map"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"  android:background="@color/material_light_teal"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+            <TextView android:id="@+id/building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Recource Center I" android:textColor="@color/dark_gray"
+                android:textSize="14dp" android:singleLine="true"
+                android:paddingLeft="15dp" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="8dp"
+                android:background="#88a8a8a8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="0.7dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="NOW" android:paddingLeft="15dp"/>
+
+                    <TextView
+                        android:text="MON 12:00 - 14:00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView21"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="20dp" />
+
+                </RelativeLayout>
+
+                <TextView android:id="@+id/unit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:text="Design &amp; Implementation Of Computer Applications" android:textColor="@color/qiscus_secondary_text"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp" android:textSize="14dp" android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp">
+
+                    <TextView android:id="@+id/student_no"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="COURSE:" android:paddingLeft="15dp"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView android:id="@+id/course_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="BSc. C.S 3.1" android:textColor="@color/qiscus_secondary_text"
+                        android:textSize="14dp" android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/student_no"
+                        android:paddingLeft="5dp" />
+                    <TextView
+                        android:text="ICS 2311 "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView23"
+                        android:textColor="@color/qiscus_secondary_text"
+                        android:textStyle="normal|bold"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp" />
+
+                    <TextView
+                        android:text="UNIT: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:id="@+id/textView25"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/course_name"
+                        android:layout_toLeftOf="@+id/textView23"
+                        android:layout_toStartOf="@+id/textView23" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#88a8a8a8"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="0.7dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp">
+
+                    <TextView android:id="@+id/unit_id"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="NEXT" android:paddingLeft="15dp"/>
+
+                    <TextView
+                        android:text="MON 14:00 - 16:00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView22"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="43dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_alignParentTop="true" />
+                </RelativeLayout>
+
+                <TextView android:id="@+id/unit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:text="Discrete Structures II" android:textColor="@color/qiscus_secondary_text"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp" android:textSize="14dp" android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView android:id="@+id/student_no"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="COURSE:" android:paddingLeft="15dp"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView android:id="@+id/course_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="BSc. C.S 3.1" android:textColor="@color/qiscus_secondary_text"
+                        android:textSize="14dp" android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/student_no"
+                        android:paddingLeft="5dp" />
+
+
+                    <TextView
+                        android:text="ICS 2311 "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView23"
+                        android:textColor="@color/qiscus_secondary_text"
+                        android:textStyle="normal|bold"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp" />
+
+                    <TextView
+                        android:text="UNIT: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:id="@+id/textView25"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/course_name"
+                        android:layout_toLeftOf="@+id/textView23"
+                        android:layout_toStartOf="@+id/textView23" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal|center">
+        <Button
+            android:text="VIEW ALL CLASSES"
+            android:layout_width="157dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/cardView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btn_viewTT"
+            android:background="@color/qiscus_primary"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal|center" />
+        <Button
+            android:text="VIEW ALL ROOMS"
+            android:layout_width="157dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/cardView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btn_viewET"
+            android:background="@color/material_light_teal"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

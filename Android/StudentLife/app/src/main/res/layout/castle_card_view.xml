@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp">
+
+    <android.support.v7.widget.CardView
+
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cardElevation="5dp"
+        android:layout_width="239dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="239dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:src="@drawable/dekutresource"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="5dp">
+
+                    <TextView android:id="@+id/university_name"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/material_teal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="DeKUT"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="University" android:textColor="@color/tableHeader"
+                        android:layout_marginTop="5dp" android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/location"
+                        android:id="@+id/imageView2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp" />
+
+                    <TextView android:id="@+id/message2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="Nyeri" android:textColor="@color/tableHeader"
+                        android:layout_marginTop="5dp" android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/castle_pop"  android:visibility="visible"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textStyle="bold"
+                        android:background="@drawable/border" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="21dp"
+                    android:background="#88a8a8a8" android:layout_marginRight="8dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+    <com.vipul.hp_hp.timelineview.TimelineView
+        android:id="@+id/time_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:marker_size="25dp"
+        app:marker="@drawable/dekutresource"
+        app:line_size="2dp"
+        app:line="@color/colorPrimary"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/material_teal" />
+</LinearLayout>
+

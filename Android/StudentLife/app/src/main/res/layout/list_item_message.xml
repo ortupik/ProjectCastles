@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" android:padding="5dp"
+        android:weightSum="1">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/leftImageView"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:src="@drawable/default_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:id="@+id/contentWithBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dp"
+            android:background="@drawable/qiscus_rounded_primary_light_chat_bg"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                android:layout_gravity="center" android:textSize="17dp"
+                android:paddingBottom="1dp"
+               />
+            <LinearLayout
+                android:id="@+id/llf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp" android:layout_marginRight="10dp"
+                android:paddingTop="1dp" android:layout_marginTop="1dp">
+                <LinearLayout
+                    android:id="@+id/tickLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal" android:layout_gravity="left"
+                    android:gravity="left">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/msgServer"
+                        android:background="@drawable/msg_check"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/msg_check"
+                        android:id="@+id/msgSent" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginLeft="0dp" android:gravity="right" android:paddingLeft="5dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rightImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:src="@drawable/default_avatar" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="messageId"
+        android:id="@+id/messageId"
+        android:visibility="invisible" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

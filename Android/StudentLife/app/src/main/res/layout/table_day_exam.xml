@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/day_view"
+        android:layout_height="match_parent"
+        android:width="80dp"
+        android:minHeight="40dp"
+        android:textColor="@color/qiscus_accent"
+        android:textAlignment="center"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:textSize="13sp"
+    android:textStyle="normal|bold"
+        android:fontFamily="casual" />
