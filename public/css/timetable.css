@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 4, 2017, 12:32:19 PM
+    Author     : Chris
+*/
+
+.timetable {
+	width: 100%;
+	font-size: 11px;
+        align:center;
+}
+.timetable th  {
+	width: 10.0%;
+        height: 20.0%;
+        min-height: 100px;
+	text-align: center;
+	background:#fff;
+	font-size: 13px;
+	color: #4D606E;
+        font-family:Roboto;
+        align:center;
+}
+ .timetable td {
+	width: 10.0%;
+        height: 20.0%;
+        min-height: 100px;
+	text-align: center;
+	background:#fff;
+	font-size: 13px;
+	color: #4D606E;
+        font-family:monospace;
+
+        align:center;
+}
+.timetable .event {
+    background:#fffff2;
+}
+.timetable .event a {
+	display: block;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.timetable .possible{
+    background:#fff;
+}
+.timetable .possible:hover a {
+    background:#b7f6e1;
+}
+.selected{
+      background:#b7f6e1;
+}
+.event {
+    background:#fffff2;
+}
+.timetable .selected{
+      background:#b7f6e1;
+}
+.timetable .possible:hover {
+	line-height: 150%;
+	 background:#b7f6e1;
+}
+

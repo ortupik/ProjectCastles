@@ -1,0 +1,34 @@
+
+.timetable {
+	font-size: 11px;
+	margin-top: 30px;
+}
+.timetable th, .timetable td {
+
+	text-align: center;
+	padding: 15px;
+     border: 1px solid grey;
+     background:#fff;
+	font-size: 14px;
+	color: #555;
+
+}
+.timetable .event {
+  background: transparent url('/static/images/person3.jpg') 0 0;
+   background-size: cover;
+   	color: #FFF;
+	line-height: 150%;
+}
+.timetable .event:hover {
+	background:#fff;
+	color:#53A3A3;
+}
+.timetable .event a {
+	display: block;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.timetable .event:hover a {
+	color:#53A3A3;
+}

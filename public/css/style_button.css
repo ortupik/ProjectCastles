@@ -1,0 +1,21 @@
+a,
+a:focus,
+a:hover {
+  color: linear-gradient(120deg, #257287, #0099cc); 
+  color: -webkit-linear-gradient(220deg, #257287, #0099cc);
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.btn{
+ background: -webkit-linear-gradient(220deg, #257287, #0099cc);
+   background: linear-gradient(120deg, #257287, #0099cc); ;
+    color: #fff;
+}

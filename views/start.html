@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>P.Castle Start Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery.min.js"></script>
+        <script>
+          if(getCookie("user_id") == null || getCookie("user_id") == ''){
+             window.location = '/login';
+          
+          }else{
+               window.location = '/index';
+           }
+            function getCookie(c_name){
+                var i,x,y,ARRcookies=document.cookie.split(";");
+                   for (i=0;i<ARRcookies.length;i++){
+                     x = ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+                     y  = ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+                     x=x.replace(/^\s+|\s+$/g,"");
+                     if (x==c_name){
+                       return unescape(y);
+                       }
+                     }
+            }
+        </script>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

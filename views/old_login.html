@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>login</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/material.css" rel="stylesheet">
+
+    <link href="css/cover.css" rel="stylesheet">
+        <link href="css/signin.css" rel="stylesheet">
+
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="js/jquery.min.js"></script>
+        <script  src="js/qrcode.min.js"></script>
+       <script src="/socket.io/socket.io.js"></script>
+
+
+  </head>
+ 
+  <body>
+
+    <div class=" row container inner" >
+         
+
+      <div class=" col-lg-9 col-lg-offset-3">
+              <nav>
+                   
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="login">Home</a></li>
+                 <!-- <li><a href="blog">Features</a></li>
+                  <li><a href="download">Download</a></li>
+                  <li ><a href="blog">Blog</a></li>
+                  <li><a href="blog">T & C</a></li>
+                   <li><a href="about">Contact</a></li>
+                   <li><a href="products">Products</a></li>-->
+
+                </ul>
+              </nav>
+      </div>
+      
+           
+           <div class="inner col-lg-7 col-lg-offset-3" >
+                <h5>INTEGRATED DEKUT TIMETABLE SYSTEM </h5>
+            <hr>
+            </div>
+          <div class=" col-lg-5 col-lg-offset-3"  style=" padding-bottom: 60px;">
+               <br>
+                   
+                <form id="loginForm"  method="POST"  action="index" class="form-signin">
+                    <h5 class="form-signin-heading">Enter the fields</h5><br>
+                  <label for="phoneNo" class="sr-only">Phone No.</label>
+                  <input type="text" id="phoneNo" name="phoneNo" class="form-control" placeholder="Phone number" required autofocus>
+                  <label for="password" class="sr-only">Password</label>
+                  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                  <div class="checkbox">
+                    <label>
+                        <a><input type="checkbox" checked="" value="remember-me">I accept the terms and conditions</a> 
+                    </label>
+                  </div>
+                  <button class="mdl-button mdl-button--primary mdl-button--raised" type="submit">Proceed</button>
+                </form>
+
+             
+          </div>
+          <div class="col-lg-4"   style="padding-top: 20px; padding-bottom: 60px;">
+              <h5 class="form-signin-heading">OR Scan the QR Code</h5><br>
+              <div class="col-lg-12" id="qrcode" >
+                  
+              </div>
+
+
+          </div>
+
+    </div>
+       <section style="padding-bottom: 20px;" >
+            <p class="text-center muted">Test Version </p>
+              <p class="text-center muted">&copy; Copyright 2017  </p>
+    </section>
+
+    <script src="js/chatting.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+     
+  </body>
+</html>

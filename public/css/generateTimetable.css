@@ -1,0 +1,73 @@
+
+#generateProgress {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+.table_class_group {
+	width: 100%;
+	font-size: 14px;
+    align:center;
+}
+
+ .table_class_group td {
+  	width: 10.0%;
+    height: 20.0%;
+    height: 30px;
+    padding:5px;
+	text-align: center;
+	font-size: 14px;
+        font-weight: bold;
+        background-color:grey;
+        color:white;
+}
+.table_class_group .event {
+    background:#00C96C;
+    color: #FFF;
+}
+.table_class_group .dept {
+
+    font-size: 22px;
+   font-weight: bold;
+    color: #FFF;
+}
+.table_class_group .dept-focused{
+ background:#00C96C;
+    font-size: 22px;
+   font-weight: bold;
+    color: #FFF;
+}
+.table_class_group .dept-done{
+ background:#b7f6e1;
+    font-size: 22px;
+   font-weight: bold;
+    color: #000;
+}
+
+.table_class_group .dept_middle {
+    background:#00A7D0;
+    font-size: 17px;
+   font-weight: bold;
+    color: #FFF;
+}
+.table_class_group .dept_end {
+    background:#00A7D0;
+    font-size: 17px;
+   font-weight: bold;
+   border-bottom-left-radius: 1em;
+    color: #FFF;
+}
+
+.table_class_group .done {
+    background:#b7f6e1;
+    color:black;
+}
+.class_group_top{
+    background:#b7f6e1;
+}
+
+.table_class_group .possible:hover {
+	line-height: 150%;
+	 background:#b7f6e1;
+}
+

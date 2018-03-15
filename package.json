@@ -1,0 +1,26 @@
+{
+  "name": "ProjectCastle",
+  "version": "0.0.1",
+  "description": "Realtime chat system for ProjectCastle",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "chat",
+    "system"
+  ],
+  "author": "Chris Kipruto",
+  "license": "Apache Licence",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "mustache": "*",
+    "formidable": "*",
+    "mysql": "*",
+    "node-static": "*",
+    "nodemailer": "*",
+    "socket.io": "*"
+  }
+}

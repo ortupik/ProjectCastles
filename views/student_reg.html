@@ -1,0 +1,157 @@
+<html lang="en">
+      <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />       
+        
+
+        <link rel="stylesheet" href="fonts/Roboto?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/jquery-ui.min.css">
+      <link href="css/material.css" rel='stylesheet' type='text/css' />
+
+          <link href="css/cover.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/styles3.css">
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+        <script src="js/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+        
+    </head>
+       
+  <body >
+      
+     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header"  >
+       <div class="android-header mdl-layout__header mdl-layout__header--waterfall ">
+        <div class="mdl-layout__header-row  mdl-shadow--2dp ">
+          <span class="android-title mdl-layout-title mdl-color-text--teal-900">
+            <b> P.CASTLE KENYA</b> <i class="mdl-color-text--Yellow-900 material-icons" role="presentation">forum</i> 
+          </span>
+            <div class=" " style="font-family: normal; padding-left: 170px;">
+           <ul class="nav masthead-nav ">
+                  <li class="active"><a href="#">Student</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Download</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                   <li><a href="#">Contact</a></li>
+                </ul>
+          </div>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>
+          <!-- Navigation -->
+          
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="images/android-logo.png">
+          </span>
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">Help</li>
+            <li class="mdl-menu__item">About</li>
+            <li  class="mdl-menu__item">Logout</li>
+            <li disabled class="mdl-menu__item"> History</li>
+          </ul>
+        </div>
+      </div>
+        
+      <div class="demo-drawer mdl-layout__drawer  mdl-color-text--White theme-color " >
+        <header class="demo-drawer-header " style="max-height: 80px;">
+          <div class="demo-avatar-dropdown " >
+            <img src="..." id="profile_photo" class="circle demo-avatar avatar-border">
+            <div style="padding-left: 10px; "><span id="username" style="padding-left: 1px; font-family: cursive; font-size: 18px;"></span><br><span id="phoneNo" style="font-size: 16px;"></span></div>
+            <div class="mdl-layout-spacer"></div>
+            
+            <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+              <i class="material-icons" role="presentation">arrow_drop_down</i>
+              <span class="visuallyhidden">Accounts</span>
+            </button>
+             
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+              <li class="mdl-menu__item">View Profile</li>
+              <li class="mdl-menu__item">Logout</li>
+              <li class="mdl-menu__item"><i class="material-icons">add</i>Add another contact</li>
+            </ul>
+           
+          </div>
+        </header>
+          
+        <nav class="demo-navigation mdl-navigation mdl-color--White " >
+            <a class="mdl-navigation__link mdl-color-text--red-800  " href=""><i class="mdl-color-text--Blue-900 material-icons " role="presentation">message</i>Social</a>
+          <a class="mdl-navigation__link mdl-color-text--blue-grey-900 " href=""><i class="mdl-color-text--Green-900 material-icons" role="presentation">inbox</i>Profile</a>
+         <!-- <a class="mdl-navigation__link mdl-color-text--blue-grey-900" href="castles"><i class="mdl-color-text--Yellow-900 material-icons" role="presentation">forum</i>Castles</a>-->
+           <span class="active_span_nav"><a class="mdl-navigation__link mdl-color-text--blue-grey-900 active_nav" href="timetable"><i class="mdl-color-text--Purple-900 material-icons" role="presentation">book</i>Student</a></span>
+           <a class="mdl-navigation__link mdl-color-text--blue-grey-900  " href=""><i class="mdl-color-text--Blue-900 material-icons is-active" role="presentation">poll</i>Polls</a>
+
+        </nav>
+          <nav class="demo-navigation mdl-navigation mdl-color--White " >
+       <div class="mdl-layout-spacer"></div>
+          <a class="mdl-navigation__link mdl-color-text--blue-grey-900" href=""><i class="mdl-color-text--Purple-900 material-icons" role="presentation">power</i><span >Log out</span></a>
+          </nav>
+      </div>
+        
+      <main class="mdl-layout__content container  ">
+        <div class="row center-align ">
+        <div class=" col-lg-4 col-lg-offset-3 mdl-shadow--2dp ">
+            
+            <form class=" center">
+                <br><h4>Student Registration</h4><br>
+                <div class="form-group ">
+                    <label for="regNo">Registration Number&nbsp;&nbsp;</label><br><br>
+                  <input type="text" class="form-control" id="regNo" placeholder="Reg No">
+                </div>   
+               
+                 <br>
+                    <label>Department</label> &nbsp;&nbsp;&nbsp;
+                    <select class="form-group ">
+                      <option value="1">CS</option>
+                      <option value="2">IT</option>
+                      <option value="3">BBIT</option>
+                    </select>
+               
+                    &nbsp;&nbsp;&nbsp;<label>Group</label>  &nbsp;&nbsp;&nbsp;
+                    <select class="form-group ">
+                      <option value="1">Y1S2</option>
+                      <option value="2">Y2S2</option>
+                      <option value="3">Y3S2</option>
+                    </select>
+               <br><br>
+               
+               <div class="form-group center">
+                 &nbsp;&nbsp;&nbsp;<button type="submit" class="btn mdl-button btn-lg btn-default">Register</button>
+               </div>
+            </form>
+        </div>
+        </div>
+      </main>
+    </div>
+      <script src="js/materialize.js">
+            $(document).ready(function() {
+                $('select').material_select();
+              });
+      </script>
+        
+      
+
+    </body>
+</html>

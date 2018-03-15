@@ -1,0 +1,183 @@
+<html lang="en">
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />       
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">   
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/material.css" rel='stylesheet' type='text/css' />
+        <link href="css/cover.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/styles3.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/typeahead.min.js"></script>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+    </head>
+
+    <body >
+
+        <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header"  >
+            <div class="android-header mdl-layout__header mdl-layout__header--waterfall ">
+                <div class="mdl-layout__header-row  mdl-shadow--2dp ">
+
+                    <span class="android-title mdl-layout-title mdl-color-text--teal-900">
+                        <b> COMPUTER SCIENCE C.O.D </b>  
+                    </span>
+
+                    <div class=" " style="font-family: Roboto; padding-left: 170px;">
+                        <ul class="nav masthead-nav ">
+                            <li class=""><a href="cod_manage_units">MANAGE UNITS</a></li>
+                            <li class="active"><a href="cod_timetables">TIMETABLES</a></li>
+                           <!-- <li class=""><a href="master_timetable">MASTER TIMETABLE</a></li>-->
+                        </ul>
+                    </div>
+                    <!-- Add spacer, to align navigation to the right in desktop -->
+                    <div class="android-header-spacer mdl-layout-spacer"></div>
+                    <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                        <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" id="search-field">
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+
+                    <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+                        <i class="material-icons">more_vert</i>
+                    </button>
+                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" >
+                        <li class="mdl-menu__item">Help</li>
+                        <li class="mdl-menu__item">About</li>
+                        <li  class="mdl-menu__item">Logout</li>
+                        <li  class="mdl-menu__item"> History</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="">
+                <div class="table-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div role="tabpanel" class="container " >
+                        
+                        
+                        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                          
+                         <br><div class=""><button class="mdl-button mdl-button--primary mdl-button--raised " data-toggle="modal" data-target="#newTimetableModal">Add New Timetable</button></div>
+                             <hr>
+                            <table class="mdl-data-table mdl-js-data-table ">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th class="mdl-data-table__cell--non-numeric">Academic Year</th>
+                                        <th class="mdl-data-table__cell--non-numeric">Intake</th>
+                                        <th class="mdl-data-table__cell--non-numeric">Dept</th>
+                                        <th class="mdl-data-table__cell--non-numeric">Group</th>
+                                         <th class="mdl-data-table__cell--non-numeric">Created At</th>
+                                        <th class="mdl-data-table__cell--non-numeric">Last Updated</th>
+                                        <th class="mdl-data-table__cell--non-numeric">Status</th>
+                                         <th class="mdl-data-table__cell--non-numeric">View</th>
+                                         <th class="mdl-data-table__cell--non-numeric">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="timetablesBody" >
+                                </tbody>
+                            </table>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <!-- New Timetable Modal -->
+            <div id="newTimetableModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">New Timetable</h4>
+                  </div>
+                  <div class="modal-body">
+                   <div>
+                      <form class="form-horizontal  " id="form-1">
+                                <div class="">
+                                    <br>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label" for="inputAcad">
+                                            Academic Year:
+                                        </label>
+                                        <div class="col-sm-5">
+                                            <select class=" form-control  " id="inputAcad" >
+                                                <option value="jan-april">2017/2018</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label" for="inputIntake">  Intake:  </label>
+                                        <div class="col-sm-5">
+                                            <select class="form-control " id="inputIntake" >
+                                                <option value="Jan-April">Jan-April</option>
+                                                <option value="May-June" >May-June</option>
+                                                <option value="Sep-Dec"  selected>Sep-Dec</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="inputDept" class="col-sm-4 control-label">Dept:</label>
+                                        <div class="col col-lg-5">
+                                            <div class="input-group">
+                                                <input disabled type="text"  value="CS" id="inputDept" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                            <label for="inputGroups" class="col-sm-4 control-label">Group:</label>
+                                            <div class="col col-lg-5">
+                                                <div class="input-group">
+                                                   <select class=" form-control  " id="inputGroups" >
+                                                        <option value="Y1S1">Y1S1</option>
+                                                        <option value="Y2S2">Y2S2</option>
+                                                        <option value="Y3S2">Y3S2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <br>
+                                     <div class="form-group">
+                                       <button class="mdl-button mdl-button--accent mdl-button--raised  col-lg-6 col-lg-push-3 " id="addTimetable" >Add New Timetable</button>
+                                     </div>
+                                    <br>
+                                     </div>
+                      </form>
+
+                   </div>
+                   </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </div>
+
+        <script src="js/dragula.js"></script>
+        <script src="js/bootstrap.js"></script>    
+        <script src="js/material.min.js"></script> 
+        <script src="js/displayCODTimetables.js"></script>
+
+</body>
+
+</html>

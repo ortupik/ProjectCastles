@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>P.Castle</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
+        <link href="css/signin.css" rel="stylesheet">
+
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="js/jquery.min.js"></script>
+       <script src="/socket.io/socket.io.js"></script>
+
+  </head>
+ 
+  <body>
+
+    <div class=" row container inner" >
+          
+      <div class=" col-lg-9 col-lg-offset-3">
+              <nav>
+                   
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Download</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                   <li><a href="#">Contact</a></li>
+
+                </ul>
+              </nav>
+      </div>
+      
+       
+        
+        <div class="form-group  col-lg-4 col-lg-offset-4 username-div" >
+            <h2><b>Step 2/2</b></h2>
+          <br> <h4>Choose username</h4><hr>
+           
+            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+            <br>
+            <h4>Input status</h4><hr>
+            <textarea  class="form-control" id="status" placeholder="this is my default status"></textarea>
+        </div>
+        
+         <div class="col-lg-4 col-lg-offset-4 center-align">
+             <h4>Upload profile image/photo</h4><hr>
+            <div class="col s12 m12 input_upload">
+                 <input class=" white teal-text" id="profile-image" type="file" name="uploads[]" ></br>
+            </div>
+           <div class="col l6 s12 m6" >
+               <img class=" responsive-img thumbnail modal-preview_img" data-caption="A picture of some deer and tons of trees" width="200" style="min-height: 150px;"  >
+           </div>
+         </div>
+        
+          <div class=" col-lg-4 col-lg-offset-4">
+              <br>
+            <button class="btn   btn-block" id="regButton" type="submit">Proceed</button>
+          </div>
+   
+          <div class="col-lg-7 col-lg-offset-3" style="padding-top: 50px; padding-bottom: 40px;">
+          </div>
+
+    </div>
+      <div class="modal fade" id="createProfileModal" style="min-height: 200px;">
+        <div class="modal-dialog ">
+          <div class="modal-content ">
+            
+              <div class="modal-body center" >
+                  <div id="progressTitle" ><h3>Please wait. Creating your profile...</h3></div>
+                 <br>
+             <div class="  progressUploadProfile">
+                 
+              <!--  <div class="progress-bar" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: 60%;" id="createProfileProgress">
+                  <span class="sr-only"></span>
+                </div>-->
+              </div>
+            </div>
+            
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
+       <section style="padding-bottom: 20px;" >
+            <p class="text-center muted">beta version for development purposes only </p>
+              <p class="text-center muted">&copy; Copyright 2016 TechBay Kenya</p>
+    </section>
+    <script src="js/chatting.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

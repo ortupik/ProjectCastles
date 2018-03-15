@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <title>login</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="js/jquery.min.js"></script>
+        <script  src="js/qrcode.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/4.3/firebase.js"></script>
+        <script src="config.js"></script>
+        <script src="js/common.js"></script>
+            <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+        <link href="css/versatile.css" rel="stylesheet" type="text/css" media="screen" />
+        <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+
+        <div class=" row container inner" >
+
+
+            <div class=" col-lg-9 col-lg-offset-3">
+                <nav>
+
+                    <ul class="nav masthead-nav">
+                        <li class="active"><a href="login">Home</a></li>
+                        <!-- <li><a href="blog">Features</a></li>
+                         <li><a href="download">Download</a></li>
+                         <li ><a href="blog">Blog</a></li>
+                         <li><a href="blog">T & C</a></li>
+                          <li><a href="about">Contact</a></li>
+                          <li><a href="products">Products</a></li>-->
+
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="inner mdl-cell--12-col" >
+                <h5>INTEGRATED DEKUT TIMETABLE SYSTEM </h5>
+                <hr>
+            </div>
+            <div class=" mdl-cell--6-col"  style=" padding-bottom: 60px;">
+                <br>
+              <div id="loading">Loading...</div>
+                <div id="loaded" class="hidden">
+                  <div id="main">
+                    <div id="user-signed-in" class="hidden">
+                      <div id="user-info">
+                        <div id="photo-container">
+                          <img id="photo">
+                        </div>
+                        <div id="name"></div>
+                        <div id="email"></div>
+                        <div id="phone"></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <p>
+                        <button id="sign-out">Sign Out</button>
+                        <button id="delete-account">Delete account</button>
+                      </p>
+                    </div>
+                    <div id="user-signed-out" class="hidden">
+
+                      <div id="firebaseui-spa">
+                        <div id="firebaseui-container"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="mdl-cell--6-col"   >
+                <h5 class="form-signin-heading">OR Scan the QR Code</h5><br>
+                <div class="col-lg-12" id="qrcode" >
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <section style="padding-bottom: 20px;" >
+            <p class="text-center muted">Test Version </p>
+            <p class="text-center muted">&copy; Copyright 2017  </p>
+        </section>
+
+        <script src="app.js"></script>
+        <script src="js/chatting.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    </body>
+</html>
